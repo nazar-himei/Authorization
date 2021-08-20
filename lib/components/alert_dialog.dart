@@ -1,3 +1,4 @@
+import 'package:authorization/main.dart';
 import 'package:authorization/view/login.dart';
 import 'package:flutter/material.dart';
 
@@ -65,12 +66,15 @@ void dialog({required BuildContext ctx}) {
                   ),
                   FlatButton(
                       child: const Text("login"),
-                      onPressed: () async {
-                        Navigator.pop(context);
-                        await Future.delayed(
-                          Duration(seconds: 2),
-                        );
-                        dialog(ctx: ctx);
+                      onPressed: () {
+                        if (_login.text == user_login &&
+                            _pass.text == user_password) {
+                          Navigator.pop(context);
+                          Future.delayed(
+                           const Duration(seconds: 5),
+                            () => dialog(ctx: ctx),
+                          );
+                        }
                       }),
                 ],
               ),
