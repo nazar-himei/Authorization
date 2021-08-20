@@ -1,4 +1,4 @@
-import 'package:authorization/widget/alert_dialog.dart';
+import 'package:authorization/components/alert_dialog.dart';
 import 'package:flutter/material.dart';
 
 import '../main.dart';

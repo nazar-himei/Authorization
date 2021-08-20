@@ -1,6 +1,6 @@
+import 'package:authorization/controller/state_controller.dart';
 import 'package:flutter/material.dart';
 
-import 'controller/state_controller.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key}) : super(key: key);

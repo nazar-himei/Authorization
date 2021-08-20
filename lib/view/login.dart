@@ -1,6 +1,7 @@
-import 'package:authorization/home.dart';
 import 'package:authorization/main.dart';
 import 'package:flutter/material.dart';
+
+import 'home.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);

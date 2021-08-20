@@ -1,5 +1,4 @@
-import 'package:authorization/home.dart';
-import 'package:authorization/login.dart';
+import 'package:authorization/view/login.dart';
 import 'package:flutter/material.dart';
 
 void dialog({required BuildContext ctx}) {
