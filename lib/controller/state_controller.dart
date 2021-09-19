@@ -1,7 +1,7 @@
 import 'package:authorization/components/alert_dialog.dart';
+import 'package:authorization/model/user.dart';
 import 'package:flutter/material.dart';
 
-import '../main.dart';
 import 'controller.dart';
 
 class StateController extends StatefulWidget {
@@ -15,7 +15,6 @@ class StateController extends StatefulWidget {
 }
 
 class StateControllerState extends State<StateController> {
-
   @override
   void initState() {
     super.initState();
@@ -33,7 +32,7 @@ class StateControllerState extends State<StateController> {
 
   void showAlertDialog(TextEditingController _login,
       TextEditingController _pass, VoidCallback dialog, BuildContext context) {
-    if (_login.text == user_login && _pass.text == user_password) {
+    if (_login.text == User.user_login && _pass.text == User.user_password) {
       print("Login successful");
       _login.clear();
       _pass.clear();

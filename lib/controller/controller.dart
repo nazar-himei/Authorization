@@ -1,8 +1,6 @@
 import 'package:authorization/controller/state_controller.dart';
 import 'package:flutter/material.dart';
 
-import '../main.dart';
-
 
 
 class Controller extends InheritedWidget {

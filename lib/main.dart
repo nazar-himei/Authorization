@@ -1,3 +1,4 @@
+import 'package:authorization/view/home.dart';
 import 'package:authorization/view/login.dart';
 import 'package:flutter/material.dart';
 
@@ -11,12 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Authorization',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
       ),
+      initialRoute: 'login',
+      routes:{
+        'login':(context) => Login(),
+        'home':(context) => MyHomePage(),
+      },
       home: const Login(),
     );
   }
 }
 
-const String user_login = "admin";
-const String user_password = "admin";
